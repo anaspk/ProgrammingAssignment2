@@ -8,6 +8,12 @@
 ## returned list as described below. The list returned by this function
 ## can be used as an object for storing a matrix and for caching its
 ## inverse.
+##
+## 2. cacheSolve() is used to calculate the inverse of a "matrix"
+## created by makeCacheMatrix() function. This function is intelligent
+## enough to use cached inverse between multiple lookups if the original
+## matrix has not changed in the meanwhile.
+
 
 ## This function optionally takes a matrix as its first argument
 ## and returns a list containing 4 functions. Its argument is the
